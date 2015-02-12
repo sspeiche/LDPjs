@@ -94,5 +94,9 @@ if (process.env.VCAP_SERVICES) {
 	var env = JSON.parse(process.env.VCAP_SERVICES);
 	exports.mongoURL = env.mongolab[0].credentials.uri;
 } else {
-	exports.mongoURL = process.env.MONGO_URL || config.mongoURL;
+	if (process.env.OPENSHIFT_MONGODB_DB_HOST) {
+		exports.mongoURL = "mongodb://" + process.env.OPENSHIFT_MONGODB_DB_HOST + ":" + process.env.OPENSHIFT_MONGODB_DB_PORT + "/";
+	} else {
+		exports.mongoURL = process.env.MONGO_URL || config.mongoURL;
+	}
 }
