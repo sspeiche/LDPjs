@@ -13,8 +13,8 @@
 
 	},
 	"scripts": {  
-   "start": "node $relative_path_from_repo_dir/app.js"
-},
+	   "start": "node app.js"
+	},
 	"repository": {}
 
 }
