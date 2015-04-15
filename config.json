@@ -1,0 +1,7 @@
+{
+	"scheme": "http",
+	"host": "ldpjs.rhcloud.com",
+	"port": 3000,
+	"context": "/r",
+	"mongoURL": "mongodb://127.0.0.1:27017/ldp"
+}

@@ -1,7 +1,0 @@
-{
-	"scheme": "http",
-	"host": "9.27.97.187",
-	"port": 3000,
-	"context": "/r",
-	"mongoURL": "mongodb://9.27.97.187:27017/ldp"
-}
