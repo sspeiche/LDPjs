@@ -68,5 +68,5 @@ app.use(function(err, req, res, next){
 });
 
 // Start server
-app.listen(env.listenPort);
+app.listen(env.listenPort, "0.0.0.0");
 console.log('App started on port ' + env.listenPort);
